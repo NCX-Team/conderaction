@@ -16,5 +16,5 @@ Gem::Specification.new do |s|
 
   s.required_ruby_version = '>= 2.0'
 
-  spec.add_runtime_dependency 'casting', '~> 0.7'
+  s.add_runtime_dependency 'casting', '~> 0.7'
 end
