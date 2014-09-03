@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.homepage = 'https://github.com/sprucemail/conderaction'
   s.license = 'MIT'
 
-  s.files = ['lib/dci.rb', 'lib/dci/context.rb', 'lib/dci/data.rb']
+  s.files = ['lib/conderaction.rb', 'lib/dci/context.rb', 'lib/dci/data.rb']
   s.require_paths = ['lib']
 
   s.required_ruby_version = '>= 2.0'
