@@ -15,7 +15,7 @@ module DCI
     def characterize(*args, &block)
       yield
       args.each do |item|
-        item.uncast
+        item.uncast unless item.nil?
       end
     end
 
