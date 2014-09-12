@@ -1,1 +1,3 @@
-Simple implementation of DCI that specifically targets Ruby on Rails.
+# Conderaction
+
+## A simple implementation of DCI that specifically targets Ruby on Rails.
