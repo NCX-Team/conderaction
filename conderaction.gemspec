@@ -1,5 +1,5 @@
 # -*- encoding: UTF-8 -*-
-require File.expand_path('../lib/conderaction/version')
+require File.expand_path('../lib/conderaction/version', __FILE__)
 
 Gem::Specification.new do |s|
   s.name = 'conderaction'
