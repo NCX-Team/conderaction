@@ -5,6 +5,33 @@
 
 ## A simple implementation of DCI that specifically targets Ruby on Rails.
 
+## Add behavior to your objects without using extend
+Do it for the life of the object or only for the life of a block of code.
+
+Conderaction is inspired by Jim Gay's [casting](https://github.com/saturnflyer/casting) gem but provides a Rails-specific twist to DCI.
+
+Here's a quick example that you might try in a Rails project:
+
+```ruby
+# implement a module that contains information for the request response
+# and apply it to an object in your system.
+def show
+  respond_with user.as(UserRepresenter)
+end
+```
+
+To use proper delegation, your approach should preserve `self` as a reference
+to the original object receiving a method. When the object receiving the forwarded
+message has its own and separate notion of `self`, you're working with a wrapper (also called
+consultation) and not using delegation.
+
+The Ruby standard library includes a library called "delegate", but it is
+a consultation approach. With that "delegate", all messages are forwarded to
+another object, but the attendant object maintains its own identity.
+
+With Conderaction, your defined methods may reference `self` and during
+execution it will refer to the original client object.
+
 ## Installation
 
 If you are using Bundler, add this line to your application's Gemfile:
