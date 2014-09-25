@@ -18,6 +18,11 @@ Gem::Specification.new do |s|
             'lib/conderaction/version.rb',
             'LICENSE',
             'README.md']
+
+  s.test_files = ['test/test_helper.rb',
+                  'test/data_test.rb',
+                  'test/context_test.rb']
+                  
   s.require_paths = ['lib']
 
   s.required_ruby_version = '>= 2.0'

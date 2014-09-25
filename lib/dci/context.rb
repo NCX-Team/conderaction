@@ -1,4 +1,5 @@
 require 'casting'
+require 'active_support'
 
 module DCI
 
