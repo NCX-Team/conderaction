@@ -4,8 +4,6 @@
 [![Code Climate](https://codeclimate.com/repos/5422f047e30ba04f2400133d/badges/732d9a461037fbfbb90a/gpa.svg)](https://codeclimate.com/repos/5422f047e30ba04f2400133d/feed)
 
 ## A simple implementation of DCI that specifically targets Ruby on Rails.
-
-## Add behavior to your objects without using extend
 Do it for the life of the object or only for the life of a block of code.
 
 Conderaction is inspired by Jim Gay's [casting](https://github.com/saturnflyer/casting) gem but provides a Rails-specific twist to DCI.
