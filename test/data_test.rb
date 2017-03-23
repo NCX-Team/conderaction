@@ -1,8 +1,7 @@
 require 'test_helper'
 
-describe DCI::Data, '.as' do
-  
-  it 'responds to added methods inside the block' do
+class DataTest < Minitest::Test
+  test "responds to added methods inside the block" do
     data = test_person
     assert !data.respond_to?(:greet)
 
@@ -11,7 +10,7 @@ describe DCI::Data, '.as' do
     assert !data.respond_to?(:greet)
   end
 
-  it 'responds to added methods without a block' do
+  test "responds to added methods without a block" do
     data = test_person
     assert !data.respond_to?(:greet)
 
@@ -20,7 +19,7 @@ describe DCI::Data, '.as' do
     assert data.respond_to?(:greet)
   end
 
-  it 'returns results from added methods inside the block' do
+  test "returns results from added methods inside the block" do
     data = test_person
     assert_raises(NoMethodError) do
       data.greet
@@ -31,7 +30,6 @@ describe DCI::Data, '.as' do
 
     assert_raises(NoMethodError) do
       data.greet
-    end    
+    end
   end
-
 end
