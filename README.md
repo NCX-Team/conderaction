@@ -50,4 +50,4 @@ Or install it yourself as:
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
 
-Built by [SpruceMail](http://www.sprucemail.com)
+Built by [CrowdOx](https://crowdox.com)
