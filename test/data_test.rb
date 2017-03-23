@@ -1,7 +1,6 @@
 require 'test_helper'
 
 describe DCI::Data, '.as' do
-  
   it 'responds to added methods inside the block' do
     data = test_person
     assert !data.respond_to?(:greet)
@@ -31,7 +30,6 @@ describe DCI::Data, '.as' do
 
     assert_raises(NoMethodError) do
       data.greet
-    end    
+    end
   end
-
 end

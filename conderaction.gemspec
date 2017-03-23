@@ -12,8 +12,8 @@ Gem::Specification.new do |s|
   s.homepage = 'https://github.com/sprucemail/conderaction'
   s.license = 'MIT'
 
-  s.files = ['lib/conderaction.rb', 
-            'lib/dci/context.rb', 
+  s.files = ['lib/conderaction.rb',
+            'lib/dci/context.rb',
             'lib/dci/data.rb',
             'lib/conderaction/version.rb',
             'LICENSE',
@@ -22,10 +22,12 @@ Gem::Specification.new do |s|
   s.test_files = ['test/test_helper.rb',
                   'test/data_test.rb',
                   'test/context_test.rb']
-                  
+
   s.require_paths = ['lib']
 
   s.required_ruby_version = '>= 2.0'
 
   s.add_runtime_dependency 'casting', '~> 0.7'
+
+  s.add_development_dependency 'minitest-rspec_mocks'
 end

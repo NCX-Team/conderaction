@@ -1,9 +1,7 @@
 require 'casting'
 
 module DCI
-
   module Data
-
     extend ActiveSupport::Concern
 
     included do
@@ -11,16 +9,14 @@ module DCI
       delegate_missing_methods
     end
 
-    def as(role, &block)
+    def as(role)
       if block_given?
         Casting.delegating(self => role) do
-          block.call(self)
+          yield(self)
         end
       else
-        self.cast_as(role)
+        cast_as(role)
       end
     end
-
   end
-
 end
