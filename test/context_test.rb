@@ -2,6 +2,13 @@ require 'test_helper'
 require 'rspec/mocks'
 
 class ContextTest < Minitest::Test
+  test "responds to added methods" do
+    data = test_person
+    context = test_greet
+    assert !data.respond_to?(:greet)
+    assert data.as(TestPerson::Greeter).respond_to?(:greet)
+  end
+
   test "responds to added methods inside the block" do
     data = test_person
     context = test_greet
